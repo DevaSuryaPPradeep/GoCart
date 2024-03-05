@@ -26,9 +26,9 @@ struct AddToCartView: View {
                     TextField("Enter your item name here", text: $textValue)
                         .frame(maxWidth: .infinity)
                         .padding()
-                        .background(Color.black)
+                        .background(Color.gray)
                         .opacity(0.5)
-                        .foregroundStyle(Color.white)
+                        .foregroundStyle(Color.black)
                         .font(.headline)
                 }
                 .padding()
@@ -87,8 +87,7 @@ struct AddToCartView: View {
         }
     }
 }
-
-/*#Preview {
-    let cartMod
-    AddToCart(dataSource: Binding<[GoCartModel]>(projectedValue: <#Binding<[GoCartModel]>#>))
-}*/
+//
+//#Preview {
+////    AddToCartView( dataSource: Binding<[GoCartModel]>())
+//}
