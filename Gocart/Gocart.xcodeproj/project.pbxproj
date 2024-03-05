@@ -8,15 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		5A162FD12B96E0010020BC7F /* GocartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A162FD02B96E0010020BC7F /* GocartApp.swift */; };
-		5A162FD32B96E0010020BC7F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A162FD22B96E0010020BC7F /* ContentView.swift */; };
+		5A162FD32B96E0010020BC7F /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A162FD22B96E0010020BC7F /* CartView.swift */; };
 		5A162FD52B96E0020020BC7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A162FD42B96E0020020BC7F /* Assets.xcassets */; };
 		5A162FD82B96E0020020BC7F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A162FD72B96E0020020BC7F /* Preview Assets.xcassets */; };
 		5A162FE22B96E0020020BC7F /* GocartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A162FE12B96E0020020BC7F /* GocartTests.swift */; };
 		5A162FEC2B96E0020020BC7F /* GocartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A162FEB2B96E0020020BC7F /* GocartUITests.swift */; };
 		5A162FEE2B96E0020020BC7F /* GocartUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A162FED2B96E0020020BC7F /* GocartUITestsLaunchTests.swift */; };
 		5A162FFB2B96E0180020BC7F /* GoCartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A162FFA2B96E0180020BC7F /* GoCartModel.swift */; };
-		5A162FFD2B96E05E0020BC7F /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A162FFC2B96E05E0020BC7F /* CartViewModel.swift */; };
-		5A162FFF2B96E1FD0020BC7F /* AddToCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A162FFE2B96E1FD0020BC7F /* AddToCart.swift */; };
+		5A162FFD2B96E05E0020BC7F /* AddToCartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A162FFC2B96E05E0020BC7F /* AddToCartModel.swift */; };
+		5A162FFF2B96E1FD0020BC7F /* AddToCartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A162FFE2B96E1FD0020BC7F /* AddToCartView.swift */; };
+		5A1630012B97002C0020BC7F /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1630002B97002C0020BC7F /* CartViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,7 @@
 /* Begin PBXFileReference section */
 		5A162FCD2B96E0010020BC7F /* Gocart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gocart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A162FD02B96E0010020BC7F /* GocartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GocartApp.swift; sourceTree = "<group>"; };
-		5A162FD22B96E0010020BC7F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5A162FD22B96E0010020BC7F /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		5A162FD42B96E0020020BC7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A162FD72B96E0020020BC7F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5A162FDD2B96E0020020BC7F /* GocartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GocartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,8 +49,9 @@
 		5A162FEB2B96E0020020BC7F /* GocartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GocartUITests.swift; sourceTree = "<group>"; };
 		5A162FED2B96E0020020BC7F /* GocartUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GocartUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5A162FFA2B96E0180020BC7F /* GoCartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoCartModel.swift; sourceTree = "<group>"; };
-		5A162FFC2B96E05E0020BC7F /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
-		5A162FFE2B96E1FD0020BC7F /* AddToCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToCart.swift; sourceTree = "<group>"; };
+		5A162FFC2B96E05E0020BC7F /* AddToCartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToCartModel.swift; sourceTree = "<group>"; };
+		5A162FFE2B96E1FD0020BC7F /* AddToCartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToCartView.swift; sourceTree = "<group>"; };
+		5A1630002B97002C0020BC7F /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +103,11 @@
 			isa = PBXGroup;
 			children = (
 				5A162FD02B96E0010020BC7F /* GocartApp.swift */,
-				5A162FD22B96E0010020BC7F /* ContentView.swift */,
+				5A162FD22B96E0010020BC7F /* CartView.swift */,
+				5A1630002B97002C0020BC7F /* CartViewModel.swift */,
 				5A162FFA2B96E0180020BC7F /* GoCartModel.swift */,
-				5A162FFC2B96E05E0020BC7F /* CartViewModel.swift */,
-				5A162FFE2B96E1FD0020BC7F /* AddToCart.swift */,
+				5A162FFC2B96E05E0020BC7F /* AddToCartModel.swift */,
+				5A162FFE2B96E1FD0020BC7F /* AddToCartView.swift */,
 				5A162FD42B96E0020020BC7F /* Assets.xcassets */,
 				5A162FD62B96E0020020BC7F /* Preview Content */,
 			);
@@ -266,10 +269,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A1630012B97002C0020BC7F /* CartViewModel.swift in Sources */,
 				5A162FFB2B96E0180020BC7F /* GoCartModel.swift in Sources */,
-				5A162FFD2B96E05E0020BC7F /* CartViewModel.swift in Sources */,
-				5A162FD32B96E0010020BC7F /* ContentView.swift in Sources */,
-				5A162FFF2B96E1FD0020BC7F /* AddToCart.swift in Sources */,
+				5A162FFD2B96E05E0020BC7F /* AddToCartModel.swift in Sources */,
+				5A162FD32B96E0010020BC7F /* CartView.swift in Sources */,
+				5A162FFF2B96E1FD0020BC7F /* AddToCartView.swift in Sources */,
 				5A162FD12B96E0010020BC7F /* GocartApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

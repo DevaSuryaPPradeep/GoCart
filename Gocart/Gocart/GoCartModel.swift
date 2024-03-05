@@ -8,8 +8,8 @@
 import Foundation
 import SwiftUI
 
-struct GoCartModel :Identifiable{
-    let  id :String = UUID().uuidString
+struct GoCartModel: Identifiable {
+    let id :String = UUID().uuidString
     let itemName :String
     let itemImage :Image
 }
