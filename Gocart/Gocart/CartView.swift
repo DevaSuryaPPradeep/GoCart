@@ -14,49 +14,62 @@ struct CartView: View {
     var body: some View {
         NavigationStack{
             VStack {
-                if viewModel.dataSource.isEmpty {
-                    List {
-                        HStack {
-                            Image(systemName: "cart")
+                if  viewModel.dataSource.isEmpty{
+                    List{
+                        HStack{
+                            Image(systemName: "photo.fill")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 100, height: 100)
+                                .scaledToFit()
                             Spacer()
                             Text("Item Name")
                                 .font(.headline)
                             Spacer()
-
                         }
                     }
                 }
-                List(viewModel.dataSource) {
-                    value in HStack {
-                        value.itemImage
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 100, height: 100)
-                        Text(value.itemName)
-                            .font(.headline)
-                    }
-                }.listStyle(.insetGrouped)
             }
-            .toolbar(content: {
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button{
-                        screentranstion.toggle()
+            
+            
+            VStack {
+                List {
+                    ForEach(viewModel.dataSource){
+                        value in HStack {
+                            value.itemImage
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 100, height: 100)
+                                .scaledToFit()
+                            Text(value.itemName)
+                                .font(.headline)
+                        }
                     }
-                label:{
-                    Image(systemName: viewModel.iconImage
-)
+                    .onDelete(perform: { Indexpath in
+                        viewModel.delete(_index: Indexpath)
+                    })
+                }
+                
+                
+                .listStyle(.insetGrouped)
+                .toolbar(content: {
+                    ToolbarItem(placement: .topBarTrailing) {
+                        Button{
+                            screentranstion.toggle()
+                        }
+                    label:{
+                        Image(systemName: viewModel.iconImage
+                        )
                         .foregroundStyle(Color.black)
-                }
-                }
-            })
-            .navigationDestination(isPresented: $screentranstion, destination: {
-                AddToCartView(dataSource: $viewModel.dataSource)
-            })
-            .navigationTitle(viewModel.title)
+                    }
+                    }
+                })
+                .navigationDestination(isPresented: $screentranstion, destination: {
+                    AddToCartView(dataSource: $viewModel.dataSource)
+                })
+                .navigationTitle(viewModel.title)
             .navigationBarTitleDisplayMode(.inline)
+            }
         }
     }
 }

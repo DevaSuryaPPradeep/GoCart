@@ -11,4 +11,8 @@ class CartViewModel: ObservableObject {
     var title: String = "Cart"
     var iconImage :String = "cart.fill"
     @Published var dataSource: [GoCartModel] = []
+    
+    func delete (_index:IndexSet ){
+        self.dataSource.remove(atOffsets:_index)
+    }
 }
