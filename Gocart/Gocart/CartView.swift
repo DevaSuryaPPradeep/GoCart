@@ -14,6 +14,21 @@ struct CartView: View {
     var body: some View {
         NavigationStack{
             VStack {
+                if viewModel.dataSource.isEmpty {
+                    List {
+                        HStack {
+                            Image(systemName: "cart")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 100, height: 100)
+                            Spacer()
+                            Text("Item Name")
+                                .font(.headline)
+                            Spacer()
+
+                        }
+                    }
+                }
                 List(viewModel.dataSource) {
                     value in HStack {
                         value.itemImage
@@ -23,7 +38,7 @@ struct CartView: View {
                         Text(value.itemName)
                             .font(.headline)
                     }
-                }
+                }.listStyle(.insetGrouped)
             }
             .toolbar(content: {
                 ToolbarItem(placement: .topBarTrailing) {
@@ -43,7 +58,6 @@ struct CartView: View {
             .navigationTitle(viewModel.title)
             .navigationBarTitleDisplayMode(.inline)
         }
-        .padding()
     }
 }
 
