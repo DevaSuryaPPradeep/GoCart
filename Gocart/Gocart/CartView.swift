@@ -14,8 +14,9 @@ struct CartView: View {
     var body: some View {
         NavigationStack{
             VStack {
-                if  viewModel.dataSource.isEmpty{
-                    List{
+                List{
+                    if  viewModel.dataSource.isEmpty{
+                        
                         HStack{
                             Image(systemName: "photo.fill")
                                 .resizable()
@@ -28,12 +29,7 @@ struct CartView: View {
                             Spacer()
                         }
                     }
-                }
-            }
-            
-            
-            VStack {
-                List {
+                    
                     ForEach(viewModel.dataSource){
                         value in HStack {
                             value.itemImage
@@ -68,7 +64,7 @@ struct CartView: View {
                     AddToCartView(dataSource: $viewModel.dataSource)
                 })
                 .navigationTitle(viewModel.title)
-            .navigationBarTitleDisplayMode(.inline)
+                .navigationBarTitleDisplayMode(.inline)
             }
         }
     }

@@ -18,6 +18,7 @@
 		5A162FFD2B96E05E0020BC7F /* AddToCartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A162FFC2B96E05E0020BC7F /* AddToCartModel.swift */; };
 		5A162FFF2B96E1FD0020BC7F /* AddToCartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A162FFE2B96E1FD0020BC7F /* AddToCartView.swift */; };
 		5A1630012B97002C0020BC7F /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1630002B97002C0020BC7F /* CartViewModel.swift */; };
+		5A3EFDBA2B979A960064BEBE /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3EFDB92B979A960064BEBE /* SplashScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		5A162FFC2B96E05E0020BC7F /* AddToCartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToCartModel.swift; sourceTree = "<group>"; };
 		5A162FFE2B96E1FD0020BC7F /* AddToCartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToCartView.swift; sourceTree = "<group>"; };
 		5A1630002B97002C0020BC7F /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
+		5A3EFDB92B979A960064BEBE /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,11 +106,13 @@
 			children = (
 				5A162FD02B96E0010020BC7F /* GocartApp.swift */,
 				5A162FD22B96E0010020BC7F /* CartView.swift */,
+				5A3EFDB92B979A960064BEBE /* SplashScreen.swift */,
 				5A1630002B97002C0020BC7F /* CartViewModel.swift */,
 				5A162FFA2B96E0180020BC7F /* GoCartModel.swift */,
 				5A162FFC2B96E05E0020BC7F /* AddToCartModel.swift */,
 				5A162FFE2B96E1FD0020BC7F /* AddToCartView.swift */,
 				5A162FD42B96E0020020BC7F /* Assets.xcassets */,
+				5A3EFDBB2B979C010064BEBE /* New Group */,
 				5A162FD62B96E0020020BC7F /* Preview Content */,
 			);
 			path = Gocart;
@@ -137,6 +141,13 @@
 				5A162FED2B96E0020020BC7F /* GocartUITestsLaunchTests.swift */,
 			);
 			path = GocartUITests;
+			sourceTree = "<group>";
+		};
+		5A3EFDBB2B979C010064BEBE /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +282,7 @@
 			files = (
 				5A1630012B97002C0020BC7F /* CartViewModel.swift in Sources */,
 				5A162FFB2B96E0180020BC7F /* GoCartModel.swift in Sources */,
+				5A3EFDBA2B979A960064BEBE /* SplashScreen.swift in Sources */,
 				5A162FFD2B96E05E0020BC7F /* AddToCartModel.swift in Sources */,
 				5A162FD32B96E0010020BC7F /* CartView.swift in Sources */,
 				5A162FFF2B96E1FD0020BC7F /* AddToCartView.swift in Sources */,
